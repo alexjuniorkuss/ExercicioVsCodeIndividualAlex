@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Produto</title>
+    <link rel="stylesheet" href="css_page/pagina.css">
+    <link rel="stylesheet" href="css_page/3header.css">
+    <link rel="stylesheet" href="css_page/produto_novo.css">
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="1_havanLogo.png" alt="Logo Havan"title ="Logo Havan">
+            </a>
+        </div>    
+        <nav id="menu-principal">
+            <ul>
+                <li>
+                   <a href="categorias.html">Categorias</a> 
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+            </ul>
+        </nav>
+                <div id="menu-usuario">
+                    <a href="">
+                        <img src="1_alex.png" alt="Imagem do Usuario"title ="Logo do usuário">
+                    </a>
+                </div>
+    </header>
+    <main>
+        <div class="cabecalho-crud">
+            <h1>Produtos</h1>
+            <a class="botao-principal" href="produtos.html">Voltar</a>
+        </div>
+        <hr />
+       <div>
+           <form action="" method="post">
+               <div class="form-item">
+                   <label for="id">Id:</label>
+                   <input type="number" name="id" id="id">
+               </div>
+               <div class="form-item">
+                   <label for="nome">Nome:</label>
+                   <input type="text" name="nome" id="nome">
+               </div>
+               <div class="form-item">
+                   <label for="valor">Valor:</label>
+                   <input type="text" name="valor" id="valor">
+               </div>
+               <hr />
+               <input class="botao-principal" type="submit" value="Salvar">
+           </form>
+       </div>
+    </main>
+    <footer>
+        <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4>
+    </footer>
+</body>
+</html>
