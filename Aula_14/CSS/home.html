@@ -32,7 +32,6 @@
                 </div>
     </header>   
     <main>
-        <h1>Bem Vindos ao Site Havan OFICIAL</h1>
         <ul class="slider">
             <li>
                 <input type="radio" id="slide1" name="slide" checked>
@@ -51,8 +50,72 @@
             </li>
         </ul>
     </main>
+      <main id="MainPrinc">
+        <button class="botao-principal" id="btViewUser" onclick= "NomeUsuario(),MostrarResultado('Alex', 25)">Info User</button>
+        <button class="botao-principal" id="btLimpar" onclick="limpar()">LimparInfo</button>
+        <button class="botao-principal" id="LinkMyLink" onclick="LinkExter()">Confira Meu Linkdin</button>
+        <button class="botao-principal" id="MudarCor" onclick="MudarCor()">Fundo</button>
+        <button class="botao-principal" id="MudarBorda" onclick="MudarBorda()">Bordas</button>
+        <label for="InfoUser" id="infoUser"></label>  
+        <div id = "elementos">
+
+        </div>
+    </main>
     <footer>
         <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4>
     </footer>
+            <script>
+                var MainPrinc = document.getElementById("MainPrinc");
+                var nome = 'Alex';
+                var idade = 22;v
+                console.log(`${nome}`);
+                var cor = true; 
+                var corB = true;
+                function NomeUsuario()
+                {
+                    let msg = 'Bom dia'
+                    alert(`${msg} ${nome}`);
+                }
+                function MostrarResultado(nome, idade)
+                 {
+                    document.getElementById("infoUser").innerHTML = (`Bom dia Sr. ${nome}. Você tem ${idade} anos!`);
+                 }
+                 function limpar()
+                 {
+                    document.getElementById("infoUser").innerHTML = (``);
+                 }
+                 function LinkExter()
+                 {
+                     let elemento = document.getElementById("elementos");
+                     elemento.innerHTML = "<a target='_blank' href='https://github.com/alexjuniorkuss'>Meu GitHub</a>";
+                 }
+                 function MudarCor()
+                 {
+                     if (cor)
+                     {
+                        MainPrinc.style.backgroundColor= "rgba(6, 28, 231, 0.582)";
+                        cor = false
+                     }
+                     else
+                     {
+                        MainPrinc.style.backgroundColor= "rgba(255, 255, 255, 0.767)";
+                        cor=true;
+                     }
+                 }
+                 function MudarBorda()
+                 {
+                     if (corB)
+                     {
+                        
+                        MainPrinc.style.border= "double 5px rgba(255, 255, 255)";
+                        corB = false
+                     }
+                     else
+                     {
+                        MainPrinc.style.border= "double 5px rgba(6, 28, 231)";
+                        corB=true;
+                     }
+                 }
+            </script>
 </body>
 </html>
