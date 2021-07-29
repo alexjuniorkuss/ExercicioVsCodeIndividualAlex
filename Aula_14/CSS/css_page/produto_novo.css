@@ -1,0 +1,30 @@
+#form{
+    margin: 20px auto 10px;
+    width:50%;
+    padding: 20px;
+    border: 1px solid #000266;
+    background: beige;
+}
+.form-item{
+    text-align: right;
+}
+label{
+    margin-right: 10px;
+    font-weight: bold;
+    color:#000266;
+}
+input[type="text"], input[type="number"]{
+    background: #e9e8e8;
+    border: 1px solid #000266;
+    height: 30px;
+    margin: 5px 0;
+    width: 80%;
+    padding: 2px 15px;
+    border-radius: 8px;
+    color: #000266;
+}
+
+input[type="submit"]{
+    margin: 10px 20%;
+    cursor: pointer;
+}

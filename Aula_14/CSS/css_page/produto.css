@@ -1,0 +1,105 @@
+table
+{
+    border: 1px solid #000266;
+    margin: 20px auto 10px;
+    width: 80%;
+    border-collapse: collapse;
+}
+main{
+    width: 90%;
+    margin: 30px auto 160px;
+    min-height: 400px;
+   
+    padding: 30px 25px;
+
+}
+table thead
+{
+    background: #000266;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+table thead tr th{
+    text-align: left;
+    padding-left: 15px;
+}
+table tbody tr{
+    height: 40px;
+    
+}
+table tr:nth-child(odd) td{
+    background-color: #e2e2e2;
+}
+table td{
+    background-color: #e2e2e275;
+}
+table tbody tr td{
+    padding-left: 15px;
+    color: #000266;
+    border: 1px solid black;
+}
+.BackWithe
+{
+    width: 70%;
+    margin: 20px auto 20px;
+    border: 2px double blue;
+    background: #ffffff81;
+}
+.Botao
+{
+    margin: 15px 0px 10px 16%;
+    width: 70%;
+    border-radius: 15%;
+}
+.id{
+    width: 50px;
+}
+.valor{
+    width: 100px;
+}
+.opcoes{
+    width: 200px;
+}
+.opcoes a{
+    text-decoration: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.opcoes  .editar{
+    color: #ccb800;
+}
+.opcoes  .editar:hover{
+    color: #FFF;
+    /* border:1px solid #ccb800; */
+    background: #ccb800;
+}
+.opcoes .excluir{
+    color: #f00;
+}
+.opcoes .excluir:hover{
+    color: #fff;
+    background: #f00;
+}
+.editarLabel{
+    color: #ccb800;
+}
+.editarLabel:hover{
+    color: #FFF;
+    /* border:1px solid #ccb800; */
+    background: #ccb800;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.excluirLabel{
+    color: #f00;
+}
+.excluirLabel:hover{
+    color: #fff;
+    background: #f00;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

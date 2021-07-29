@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havan</title>
+    <link rel="stylesheet" href="css_page/pagina.css">
+    <link rel="stylesheet" href="css_page/3header.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="1_havanLogo.png" alt="Logo Havan"title ="Logo Havan">
+            </a>
+        </div>    
+        <nav id="menu-principal">
+            <ul>
+                <li>
+                   <a href="categorias.html">Categorias</a> 
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="../JS/Crud.html">Bandas</a>
+                </li>
+            </ul>
+        </nav>
+                <div id="menu-usuario">
+                    <a href="">
+                        <img src="1_alex.png" alt="Imagem do Usuario"title ="Logo do usuário">
+                    </a>
+                </div>
+    </header>   
+    <main>
+        <ul class="slider">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="1_havan_menu.jpg" >
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="2_havan_meu.jpg">
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide">
+                <label for="slide3"></label>
+                <img src="3_havan_meu.jpg">
+            </li>
+        </ul>
+    </main>
+      <main id="MainPrinc">
+        <button class="botao-principal" id="btViewUser" onclick= "NomeUsuario(),MostrarResultado('Alex', 25)">Info User</button>
+        <button class="botao-principal" id="btLimpar" onclick="limpar()">LimparInfo</button>
+        <button class="botao-principal" id="LinkMyLink" onclick="LinkExter()">Confira Meu Linkdin</button>
+        <button class="botao-principal" id="MudarCor" onclick="MudarCor()">Fundo</button>
+        <button class="botao-principal" id="MudarBorda" onclick="MudarBorda()">Bordas</button>
+        <label for="InfoUser" id="infoUser"></label>  
+        <div id = "elementos">
+
+        </div>
+    </main>
+    <footer>
+        <h4>Todos os direitos reservados <br /> &copy; Havan Labs</h4>
+    </footer>
+            <script>
+                var MainPrinc = document.getElementById("MainPrinc");
+                var nome = 'Alex';
+                var idade = 22;v
+                console.log(`${nome}`);
+                var cor = true; 
+                var corB = true;
+                function NomeUsuario()
+                {
+                    let msg = 'Bom dia'
+                    alert(`${msg} ${nome}`);
+                }
+                function MostrarResultado(nome, idade)
+                 {
+                    document.getElementById("infoUser").innerHTML = (`Bom dia Sr. ${nome}. Você tem ${idade} anos!`);
+                 }
+                 function limpar()
+                 {
+                    document.getElementById("infoUser").innerHTML = (``);
+                 }
+                 function LinkExter()
+                 {
+                     let elemento = document.getElementById("elementos");
+                     elemento.innerHTML = "<a target='_blank' href='https://github.com/alexjuniorkuss'>Meu GitHub</a>";
+                 }
+                 function MudarCor()
+                 {
+                     if (cor)
+                     {
+                        MainPrinc.style.backgroundColor= "rgba(6, 28, 231, 0.582)";
+                        cor = false
+                     }
+                     else
+                     {
+                        MainPrinc.style.backgroundColor= "rgba(255, 255, 255, 0.767)";
+                        cor=true;
+                     }
+                 }
+                 function MudarBorda()
+                 {
+                     if (corB)
+                     {
+                        
+                        MainPrinc.style.border= "double 5px rgba(255, 255, 255)";
+                        corB = false
+                     }
+                     else
+                     {
+                        MainPrinc.style.border= "double 5px rgba(6, 28, 231)";
+                        corB=true;
+                     }
+                 }
+            </script>
+</body>
+</html>
